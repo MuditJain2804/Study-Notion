@@ -1,13 +1,122 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App{
+  width: 100vw;
+  height: 100vh;
+  background-color: #000814;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 11/12px;
+  max-width: 960px;
+  padding-top: 4px;
+  margin: auto;
+}
+
+.list{
+  text-decoration: none;
+  color: #AFB2BF;
+}
+
+.home,.dashboard{
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  height: 75%;
+}
+
+.container{
+  display: flex;
+  width: 11/12px;
+  max-width: 960px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.heading{
+  color: #F1F2FF;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.description{
+  font-size: 1.125rem;
+  margin-top: 1px;
+}
+
+.descripton-1{
+  color: #AFB2BF;
+}
+
+.descripton-2{
+  color: #47A5C5;
+}
+
+.lineContainer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  gap:2px;
+}
+
+.line{
+  height: 1px;
+  background-color:#2C333F;
+  width: 100%;
+}
+
+.or{
+  color: #2C333F;
+  font-size: medium;
+}
+
+.image{
+  position: relative;
+  width: 11/12px;
+  max-width: 100%;
+}
+
+.image2{
+  position: absolute;
+  right: 7px;
+  top: 3px;
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#email,#password,#firstName,#lastName,#confirmPassword::placeholder{
+  color: #F1F2FF;
+}
+
+.emailLabel,.passwordLabel,.firstNameLabel,.lastNameLabel,.confirmPasswordLabel{
+  font-size: 0.875rem;
+  color: #F1F2FF;
+  margin-bottom: 1px;
+  line-height: 1.375rem;
+}
+
+.forgotPassword{
+  font-size: small;
+  color: #47A5C5;
+  max-width: max-content;
+  margin-left: auto;
+  text-decoration:none
+}
+
+.nameContainer{
+  display: flex;
+  gap: 10px;
+}
+
+.passwordContainer{
+  display: flex;
+  gap: 10px;
 }
